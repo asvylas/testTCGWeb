@@ -1,0 +1,14 @@
+footer {
+	position: fixed;
+	clear: both;
+	text-align: center;
+	padding: 8px 25px;
+	background-color: #000000;
+	bottom: 0;
+	color: white;
+	box-shadow: 1px 1px 1px grey;
+	text-align:center;
+	right: 0;
+	border: 25px 10px solid black;
+	border-radius: 5px;
+}

@@ -1,0 +1,117 @@
+﻿@import "cards.css";
+@import "footer.css";
+@import "frame.css";
+@import "news.css";
+@import "buttons.css";
+@import "about.css";
+
+header {
+	background: #000000;
+	margin: 10px 200px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	broder: 10px solid black;
+	border-radius: 5px;
+	min-width: 380px;
+	box-shadow: 0px 0px 8px black;
+}
+header h1 {
+	display: inline-block;
+	margin: 10px 15px 10px 10px;
+	text-align: center;
+}
+header h1:hover {
+	box-shadow: 1 1 1 white;
+}
+nav {
+	margin: 0px;
+	display:	inline-block;
+	hover: #990099
+}
+nav ul {
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+	background-color: #000000;
+	margin: 0px;
+	border-radius: 4px;
+	}
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0px;
+	text-decoration: none;
+	margin: 0;
+	border-radius: 5px;
+}
+nav ul li a {
+	color: white;
+	text-decoration:none;
+	padding: 2px 5px;
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+nav ul li a:hover {
+	background: white;
+	color: black;
+	border-radius: 5px;
+}
+.pbh {
+	background: #33cc33;
+	border: 2px solid #2db92d;
+	border-radius: 10px;
+	width: 45%;
+	margin: auto;
+	text-align: center;
+	font-size: 10pt;
+	padding: 5px 10px 5px 10px;
+	display: none;
+}
+.pbs {
+	background: #e6e6e6;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 20pt;
+}
+.pbhcont {
+	background: #00ff55;
+	width: 5%;
+	padding: 5px 10px 5px 10px;
+	radius: 10px;
+	border: 2px solid #00ff55;
+	border-radius: 10px;
+}
+.qoute {
+	font-style: italic;
+	font-family: "Cinzel";
+	margin:auto;
+	text-align:left;
+	background: #e6e6e6;
+	margin: 5%;
+	padding: 5%;
+	border-radius: 5px;
+}
+.author {
+	font-style: normal;
+	text-align:right;
+	font-size:22pt;
+}
+.h2 {
+	font-family: "Cinzel";
+	text-align: center;
+	font-size: 30pt;
+	font-style: normal;
+	
+}
+.hidden {
+	display:none;
+}
+.audio {
+	display: block;
+	margin: 15px auto;
+}
