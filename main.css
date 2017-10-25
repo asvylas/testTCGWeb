@@ -1,11 +1,11 @@
 ﻿@import "cards.css";
 @import "footer.css";
 @import "frame.css";
-@import "news.css";
-@import "buttons.css";
-@import "about.css";
+
 
 header {
+	min-width: 15em;
+	height:3em;
 	background: #000000;
 	margin: 10px 200px;
 	color: white;
@@ -13,7 +13,6 @@ header {
 	text-align: center;
 	broder: 10px solid black;
 	border-radius: 5px;
-	min-width: 380px;
 	box-shadow: 0px 0px 8px black;
 }
 header h1 {
@@ -87,6 +86,7 @@ nav ul li a:hover {
 	border-radius: 10px;
 }
 .qoute {
+	min-width: 33em;
 	font-style: italic;
 	font-family: "Cinzel";
 	margin:auto;
