@@ -12,6 +12,7 @@
 				<ul>
 					<li class="pbutton" data-hs="pbutton1" id="home"><a href="#">Home</a></li>
 					<li class="pbutton" id="cards" data-hs="hs" ><a href="#">Cards</a></li>
+					<li class="pbutton" id="map" data-hs="hs" ><a href="#">Map</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -50,7 +51,7 @@ It is inevitable that people try to find a way around this, another way to conti
 		</div>
 		
 		<div id="cardcontainer">
-				<div data-cardtype="monster" class="hidden" id="card1">
+				<div data-cardtype="spell" class="hidden" id="card1">
 					<a target="_blank">
 						<img src="media/1.jpg" alt="1" width ="350" height="265">
 					</a>
@@ -82,7 +83,7 @@ It is inevitable that people try to find a way around this, another way to conti
 					</div>
 
 				</div>
-				<div data-cardtype="monster" class="hidden" id="card3">
+				<div data-cardtype="field" class="hidden" id="card3">
 						<a target="_blank">
 							<img src="media/3.jpg" alt="3" width ="350" height="265">
 						</a>
@@ -113,7 +114,7 @@ It is inevitable that people try to find a way around this, another way to conti
 					</div>
 
 				</div>
-				<div data-cardtype="monster" class="hidden" id="card5">
+				<div data-cardtype="spell" class="hidden" id="card5">
 					<a target="_blank">
 						<img src="media/5.jpg" alt="1" width ="350" height="265">
 					</a>
@@ -129,7 +130,7 @@ It is inevitable that people try to find a way around this, another way to conti
 						</div>
 
 				</div>
-				<div data-cardtype="monster" class="hidden" id="card6">
+				<div data-cardtype="field" class="hidden" id="card6">
 					<a target="_blank">
 						<img src="media/6.jpg" alt="1" width ="350" height="265">
 					</a>
@@ -193,10 +194,15 @@ It is inevitable that people try to find a way around this, another way to conti
 						</div>
 
 				</div>
+
 	</div>
-	
+				<div class="mapContainer" id="map">
+				<div data-map="mainMap" class="hidden" id="mapVisual">
+				</div>
+				</div>
 		<footer> &copy;2017 Project X, By Grimme</footer>
-		<script src="header module.js"></script>
+		<script src="cardStats.js"></script>
+		<script src="header.js"></script>
 		<script src="main.js"></script>
 	</body>
 </html>

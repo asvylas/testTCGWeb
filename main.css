@@ -1,6 +1,7 @@
 ﻿@import "cards.css";
 @import "footer.css";
 @import "frame.css";
+@import "map.css";
 
 
 header {
@@ -114,4 +115,8 @@ nav ul li a:hover {
 .audio {
 	display: block;
 	margin: 15px auto;
+}
+
+#map {
+	display: inline-block;
 }
