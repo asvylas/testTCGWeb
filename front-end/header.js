@@ -1,13 +1,15 @@
+'use strict'
 // Heading Module.
-var home = document.getElementById ("home")
-var cards = document.getElementById ("cards")
-var map = document.getElementById("map")
-var ctypes = document.getElementById("ctypes")
-var cardList = document.querySelectorAll("div[data-cardtype]")
-var mapVisual = document.getElementById("mapVisual")
+const home = document.getElementById ("home")
+const cards = document.getElementById ("cards")
+const map = document.getElementById("map")
+const ctypes = document.getElementById("ctypes")
+const cardList = document.querySelectorAll("div[data-cardtype]")
+const mapVisual = document.getElementById("mapVisual")
 
 
-
+// Need MAJOR REVISION BITTE
+// OLD CODE PLS NO JUDGE. ~~
 home.addEventListener("click", hp);
 function hp() {
 	if (mapVisual.className==="map"){
@@ -19,13 +21,16 @@ function hp() {
 	if (ctypes.className==="row"){
 	ctypes.className = "hidden"
 	};	
-	for (i = 0; i < cardList.length; i++) {
+	for (let i = 0; i < cardList.length; i++) {
 	cardList[i].className = "hidden"
 	}
 };
 
 cards.addEventListener("click", showcards);
 function showcards() {
+//Calling function to assign values to cards
+	addCardStats();
+
 	if (homepage.className ==="qoute") {
 		homepage.className = "hidden"
 	};
@@ -35,7 +40,7 @@ function showcards() {
 	if (ctypes.className==="hidden"){
 		ctypes.className = "row"
 	};
-	for (i = 0; i < cardList.length; i++) {
+	for (let i = 0; i < cardList.length; i++) {
 	cardList[i].className = "images"
 	};
 	
@@ -52,7 +57,7 @@ function showmap() {
 	if (mapVisual.className==="hidden"){
 		mapVisual.className = "map"
 	};
-	for (i = 0; i < cardList.length; i++) {
+	for (let i = 0; i < cardList.length; i++) {
 	cardList[i].className = "hidden"
 	};
 	
