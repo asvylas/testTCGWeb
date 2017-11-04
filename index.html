@@ -17,9 +17,9 @@
 			<nav>
 				<h1>Prioject <span id="x">X</span></h1>
 				<ul>
-					<li class="pbutton" data-hs="pbutton1" id="home"><a href="#">Home</a></li>
-					<li class="pbutton" id="cards" data-hs="hs"><a href="#">Cards</a></li>
-					<li class="pbutton" id="map" data-hs="hs"><a href="#">Map</a></li>
+					<button class="pbutton" data-hs="pbutton1" id="home">Home</button>
+					<button class="pbutton" id="cards" data-hs="hs">Cards</button>
+					<button class="pbutton" id="map" data-hs="hs">Map</button>
 				</ul>
 			</nav>
 		</header>
@@ -31,7 +31,7 @@
 		<button id="field" class="buttoncardtypes">Field Cards</button>
 	</div>
 
-	<div class="qoute" id="homepage">
+	<div data-nav="home" class="homecontainer" id="homecontainer">
 		<div data-hs="james" id="james">
 
 			<h2 class="h2">
@@ -63,7 +63,7 @@
 		</div>
 	</div>
 
-	<div id="cardcontainer">
+	<div data-nav="cards" id="cardscontainer" class="cardscontainer">
 		<div data-cardtype="spell" class="hidden" id="card1">
 			<a target="_blank">
 				<p class="cardName"></p>
@@ -244,9 +244,9 @@
 				</p>
 			</div>
 		</div>
-
 	</div>
-	<div class="mapContainer" id="map">
+
+	<div data-nav="map" class="mapcontainer" id="mapContainer">
 		<div data-map="mainMap" class="hidden" id="mapVisual">
 		</div>
 	</div>

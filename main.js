@@ -26,22 +26,22 @@ cardStatsReq.onload = function(){
 }
 cardStatsReq.send();
 
-function addCardStats(cardStats) {
-  //Need to remake this to only use query ONCE.
+function addCardStats(data) {
+//Query DOM for container element and then query the element instead.
+  const cardContainer = document.getElementById("cardscontainer");
+  const hpContainers = cardContainer.querySelectorAll("div.HP-container");
+  const attContainers = cardContainer.querySelectorAll("div.ATTACK-container");
+  const imgContainers = cardContainer.querySelectorAll("img.cardImg");
+  const nameContainers = cardContainer.querySelectorAll("p.cardName");
+  const triviaContainers = cardContainer.querySelectorAll("p.trivia-text")
 
-  const hpContainers = document.querySelectorAll("div.HP-container");
-  const attContainers = document.querySelectorAll("div.ATTACK-container");
-  const imgContainers = document.querySelectorAll("img.cardImg");
-  const nameContainers = document.querySelectorAll("p.cardName");
-  const triviaContainers = document.querySelectorAll("p.trivia-text")
 
-
-  // Assigning HP/ATT/IMG/NAME/TRIVIA values form "DB"
-  for (let i = 0; i < cardStats.length; i++) {
-    hpContainers[i].querySelector('h3').innerHTML = cardStats[i].hp;
-    attContainers[i].querySelector('h3').innerHTML = cardStats[i].attack;
-    imgContainers[i].src = cardStats[i].image;
-    nameContainers[i].innerHTML = cardStats[i].name;
-    triviaContainers[i].innerHTML = cardStats[i].text;
+  // Assigning HP/ATT/IMG/NAME/TRIVIA values form json
+  for (let i = 0; i < data.length; i++) {
+    hpContainers[i].querySelector('h3').innerHTML = data[i].hp;
+    attContainers[i].querySelector('h3').innerHTML = data[i].attack;
+    imgContainers[i].src = data[i].image;
+    nameContainers[i].innerHTML = data[i].name;
+    triviaContainers[i].innerHTML = data[i].text;
   }
 };
