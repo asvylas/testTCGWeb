@@ -19,7 +19,30 @@ document.getElementById("ctypes").addEventListener("click", function(e) {
   };
 });
 
-/* Card stats [fake DB] */
+/* Card stats need to move to json
+https://raw.githubusercontent.com/asvylas/testTCGWeb/master/media/Cards.json
+
+*/
+
+const cardStatsReq = new XMLHttpRequest()
+cardStatsReq.open("GET","https://learnwebcode.github.io/json-example/animals-1.json");
+
+cardStatsReq.onload = function(){
+  const cardStats = JSON.parse(cardStatsReq.responseText);
+  console.log(cardStats)
+}
+cardStatsReq.send();
+
+
+
+
+
+
+
+
+
+
+
 const cardStatsArray = [{
     type: "Spell",
     name: "Bladed Devil",
