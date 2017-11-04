@@ -1,4 +1,5 @@
-[{
+[
+  {
     "type": "Spell",
     "name": "Bladed Devil",
     "text": "Trivia text here!",
@@ -6,7 +7,6 @@
     "attack": "7",
     "hp": "6"
   },
-
   {
     "type": "Monster",
     "name": "Sad Gorgyle",
@@ -15,7 +15,6 @@
     "attack": "5",
     "hp": "9",
   },
-
   {
     "type": "Field",
     "name": "Kitty Cat",
@@ -24,7 +23,6 @@
     "attack": "6",
     "hp": "6"
   },
-
   {
     "type": "Monster",
     "name": "I'm Hungry",
@@ -33,7 +31,6 @@
     "attack": "7",
     "hp": "6"
   },
-
   {
     "type": "Spell",
     "name": "Sexual Deviant",
@@ -42,7 +39,6 @@
     "attack": "7",
     "hp": "5"
   },
-
   {
     "type": "Field",
     "name": "Arm-chair Warrior",
@@ -51,7 +47,6 @@
     "attack": "7",
     "hp": "6"
   },
-
   {
     "type": "Monster",
     "name": "Icy Ice",
@@ -60,7 +55,6 @@
     "attack": "7",
     "hp": "2"
   },
-
   {
     "type": "Monster",
     "name": "Icier Ice",
@@ -69,7 +63,6 @@
     "attack": "7",
     "hp": "6"
   },
-
   {
     "type": "Monster",
     "name": "Sisters",

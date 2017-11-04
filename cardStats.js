@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/asvylas/testTCGWeb/master/media/Cards.json
 */
 
 const cardStatsReq = new XMLHttpRequest()
-cardStatsReq.open("GET","https://learnwebcode.github.io/json-example/animals-1.json");
+cardStatsReq.open("GET", "https://raw.githubusercontent.com/asvylas/testTCGWeb/master/media/Cards.json");
 
 cardStatsReq.onload = function(){
   const cardStats = JSON.parse(cardStatsReq.responseText);
