@@ -1,249 +1,259 @@
 <!doctype html>
 <html>
-	<head>
-	<title>X</title>    
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="TCG">
-	  <meta name="keywords" content="TCG">
-		<link href="main.css" rel="stylesheet" type="text/css"/>
-		<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
-	</head>
-	<body>
-		<div class="headercontainer">
+
+<head>
+	<title>X</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="TCG">
+	<meta name="keywords" content="TCG">
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+</head>
+
+<body>
+	<div class="headercontainer">
 		<header>
-			<nav><h1>Prioject <span id="x">X</span></h1>
+			<nav>
+				<h1>Prioject <span id="x">X</span></h1>
 				<ul>
 					<li class="pbutton" data-hs="pbutton1" id="home"><a href="#">Home</a></li>
-					<li class="pbutton" id="cards" data-hs="hs" ><a href="#">Cards</a></li>
-					<li class="pbutton" id="map" data-hs="hs" ><a href="#">Map</a></li>
+					<li class="pbutton" id="cards" data-hs="hs"><a href="#">Cards</a></li>
+					<li class="pbutton" id="map" data-hs="hs"><a href="#">Map</a></li>
 				</ul>
 			</nav>
 		</header>
+	</div>
+
+	<div class="hidden" id="ctypes">
+		<button id="monster" class="buttoncardtypes">Monster Cards</button>
+		<button id="spell" class="buttoncardtypes">Spell Cards</button>
+		<button id="field" class="buttoncardtypes">Field Cards</button>
+	</div>
+
+	<div class="qoute" id="homepage">
+		<div data-hs="james" id="james">
+
+			<h2 class="h2">
+					Dark Souls
+				</h2> "The world of Dark Souls is a world of cycles. Kingdoms rise and fall, ages come and go, and even time can end and restart as the flame fades and is renewed. These cycles are linked to the First Flame, a mysterious manifestation of life that divides
+			and defines separate states such as heat and cold, or life and death. As the First Flame fades, these differences also begin to fade, such as life and death having little distinction, and humans becoming Undead. The onset of an Age of Dark, the time
+			when the First Flame has fully died, is marked by endless nights, rampant undeath, time, space, and reality breaking down, lands collapsing and converging on one another, people mutating into monsters, darkness covering the world, and the Gods losing
+			their power. To avoid this and prolong the Age of Fire, the bearer of a powerful soul must "link" themselves to the First Flame, becoming the fuel for another age. If this is not done, the First Flame will eventually die, and an Age of Dark will begin."
+
+			<div class="author">
+				Ornstein
+			</div>
 		</div>
-		
-		<div class="hidden" id="ctypes">
-			<button  id="monster" class="buttoncardtypes">Monster Cards</button>
-			<button id="spell" class="buttoncardtypes">Spell Cards</button>
-			<button id="field" class="buttoncardtypes">Field Cards</button>
+		<div data-hs="grim" id="grim">
+
+			<h2 class="h2">
+					Darker Souls
+				</h2> "The powerful Lord Souls were taken from the First Flame, used to defeat the dragons, and then to establish kingdoms. Souls are inextricably (and inexplicably) linked to fire. Souls are life, and life is fire; it stands to reason that souls are fire,
+			as well. Without the First Flame and without souls, there is no life. The bearer of a strong soul, called a Lord, who links themselves to the First Flame, is thus rekindling the flames with their own soul, returning life to it. In the end, one could
+			expect that all souls will have been returned to the First Flame, and the Age of Fire will have effectively ended anyways. It is inevitable that people try to find a way around this, another way to continue the Age of Fire without making sacrifices,
+			but in every case they fail. In the first Age of Fire, the Witch of Izalith attempted to create a duplicate of the First Flame using her witchcraft and a special soul, but failed catastrophically. Instead of making another First Flame, she had created
+			a twisted Flame of Chaos that produced distortions of life, turning herself and all her daughters into demons. These demons were malevolent, and wandered the land. Gwyn gathered up his armies and fought the demons of Chaos, eventually driving them
+			back and shackling the Bed of Chaos to bind them. Knowing that the Age of Fire was nearing its end, under the guidance of the primordial serpent Kingseeker Frampt, Gwyn offered himself to the First Flame to stave off the Dark. As the flames surged
+			with new life, the knights who followed him in were burnt by the flames and now wander the world as the Black Knights, hollow shells of armor who attack indiscriminately."
+
+			<div class="author">
+				Smough
+			</div>
 		</div>
-		
-		<div class="qoute" id="homepage">
-			<div data-hs="james" id="james">
-			
-				<h2 class="h2">
-					Dark Souls 
-				</h2>
-				"The world of Dark Souls is a world of cycles. Kingdoms rise and fall, ages come and go, and even time can end and restart as the flame fades and is renewed. These cycles are linked to the First Flame, a mysterious manifestation of life that divides and defines separate states such as heat and cold, or life and death. As the First Flame fades, these differences also begin to fade, such as life and death having little distinction, and humans becoming Undead. The onset of an Age of Dark, the time when the First Flame has fully died, is marked by endless nights, rampant undeath, time, space, and reality breaking down, lands collapsing and converging on one another, people mutating into monsters, darkness covering the world, and the Gods losing their power. To avoid this and prolong the Age of Fire, the bearer of a powerful soul must "link" themselves to the First Flame, becoming the fuel for another age. If this is not done, the First Flame will eventually die, and an Age of Dark will begin."
-				
-				<div class="author">
-					Ornstein
+	</div>
+
+	<div id="cardcontainer">
+		<div data-cardtype="spell" class="hidden" id="card1">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="1" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
+				</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
 				</div>
 			</div>
-			<div data-hs="grim" id="grim">
-			
-				<h2 class="h2">
-					Darker Souls
-				</h2>
-	
-				"The powerful Lord Souls were taken from the First Flame, used to defeat the dragons, and then to establish kingdoms. Souls are inextricably (and inexplicably) linked to fire. Souls are life, and life is fire; it stands to reason that souls are fire, as well. Without the First Flame and without souls, there is no life. The bearer of a strong soul, called a Lord, who links themselves to the First Flame, is thus rekindling the flames with their own soul, returning life to it. In the end, one could expect that all souls will have been returned to the First Flame, and the Age of Fire will have effectively ended anyways.
-It is inevitable that people try to find a way around this, another way to continue the Age of Fire without making sacrifices, but in every case they fail. In the first Age of Fire, the Witch of Izalith attempted to create a duplicate of the First Flame using her witchcraft and a special soul, but failed catastrophically. Instead of making another First Flame, she had created a twisted Flame of Chaos that produced distortions of life, turning herself and all her daughters into demons. These demons were malevolent, and wandered the land. Gwyn gathered up his armies and fought the demons of Chaos, eventually driving them back and shackling the Bed of Chaos to bind them. Knowing that the Age of Fire was nearing its end, under the guidance of the primordial serpent Kingseeker Frampt, Gwyn offered himself to the First Flame to stave off the Dark. As the flames surged with new life, the knights who followed him in were burnt by the flames and now wander the world as the Black Knights, hollow shells of armor who attack indiscriminately."
-				
-				<div class="author">
-					Smough
-				</div></div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
 		</div>
-		
-		<div id="cardcontainer">
-				<div data-cardtype="spell" class="hidden" id="card1">
-					<a target="_blank">
-						<p class="cardName"></p>
-						<img src="" alt="1" width ="350" height="265" class="cardImg">
-					</a>
-					<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-					</div>
-					<div class="trivia-text-container">
-						<p class="trivia-text">
-						</p>
-					</div>
+		<div data-cardtype="monster" class="hidden" id="card2">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="2" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
 				</div>
-				<div  data-cardtype="monster" class="hidden" id="card2">
-					<a target="_blank">
-						<p class="cardName"></p>
-						<img src="" alt="2" width ="350" height="265" class="cardImg">
-					</a>
-					<div class="desc">
-					<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-					</div>
-					<div class="trivia-text-container">
-						<p class="trivia-text">
-						</p>
-					</div>
-					</div>
-				<div data-cardtype="field" class="hidden" id="card3">
-						<a target="_blank">
-						<p class="cardName"></p>
-							<img src="" alt="3" width ="350" height="265" class="cardImg">
-						</a>
-						<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-						</div>
-						<div class="trivia-text-container">
-						<p class="trivia-text">
-						</p>
-					</div>
-					</div>
-				<div data-cardtype="monster" class="hidden" id="card4">
-					<a target="_blank">
-					<p class="cardName"></p>
-						<img src="" alt="4" width ="350" height="265" class="cardImg">
-					</a>
-					<div class="desc">
-					<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-					</div>
-						<div class="trivia-text-container">
-							<p class="trivia-text">
-							</p>
-						</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
 				</div>
-				<div data-cardtype="spell" class="hidden" id="card5">
-					<a target="_blank">
-					<p class="cardName"></p>
-						<img src="" alt="1" width ="350" height="265" class="cardImg">
-					</a>
-						<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-						</div>
-						<div class="trivia-text-container">
-							<p class="trivia-text">
-							</p>
-						</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="field" class="hidden" id="card3">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="3" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
 				</div>
-				<div data-cardtype="field" class="hidden" id="card6">
-					<a target="_blank">
-					<p class="cardName"></p>
-						<img src="" alt="1" width ="350" height="265" class="cardImg">
-					</a>
-						<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-						</div>
-						<div class="trivia-text-container">
-							<p class="trivia-text">
-							</p>
-						</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
 				</div>
-				<div data-cardtype="monster" class="hidden" id="card7">
-					<a target="_blank">
-					<p class="cardName"></p>
-						<img src="" alt="1" width ="350" height="265" class="cardImg">
-					</a>
-						<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-						</div>
-						<div class="trivia-text-container">
-							<p class="trivia-text">
-							</p>
-						</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="monster" class="hidden" id="card4">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="4" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
 				</div>
-				<div data-cardtype="monster" class="hidden" id="card8">
-					<a target="_blank">
-					<p class="cardName"></p>
-						<img src="" alt="1" width ="350" height="265" class="cardImg">
-					</a>
-						<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-						</div>
-						<div class="trivia-text-container">
-							<p class="trivia-text">
-							</p>
-						</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
 				</div>
-				<div data-cardtype="monster" class="hidden" id="card9">
-					<a target="_blank">
-					<p class="cardName"></p>
-						<img src="" alt="1" width ="350" height="265" class="cardImg">
-					</a>
-						<div class="desc">
-						<div class="HP-container">
-							<img src="media/hp.svg" alt="1" width ="50" height="50" class="HP">
-							<h3 class="HP-value"></h3>
-						</div>
-						<div class="ATTACK-container">
-							<h3 class="ATTACK-value"></h3>
-							<img src="media/attack.svg" alt="1" width ="50" height="50" class="ATTACK">
-						</div>
-						</div>
-						<div class="trivia-text-container">
-							<p class="trivia-text">
-							</p>
-					</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="spell" class="hidden" id="card5">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="1" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
 				</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
+				</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="field" class="hidden" id="card6">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="1" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
+				</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
+				</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="monster" class="hidden" id="card7">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="1" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
+				</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
+				</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="monster" class="hidden" id="card8">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="1" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
+				</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
+				</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
+		<div data-cardtype="monster" class="hidden" id="card9">
+			<a target="_blank">
+				<p class="cardName"></p>
+				<img src="" alt="1" width="350" height="265" class="cardImg">
+			</a>
+			<div class="desc">
+				<div class="HP-container">
+					<img src="media/hp.svg" alt="1" width="50" height="50" class="HP">
+					<h3 class="HP-value"></h3>
+				</div>
+				<div class="ATTACK-container">
+					<h3 class="ATTACK-value"></h3>
+					<img src="media/attack.svg" alt="1" width="50" height="50" class="ATTACK">
+				</div>
+			</div>
+			<div class="trivia-text-container">
+				<p class="trivia-text">
+				</p>
+			</div>
+		</div>
 
 	</div>
-				<div class="mapContainer" id="map">
-				<div data-map="mainMap" class="hidden" id="mapVisual">
-				</div>
-				</div>
-		<footer> &copy;2017 Project X, By Grimme</footer>
-		<script src="header.js"></script>
-		<script src="cardStats.js"></script>
-		<script src="main.js"></script>
-	</body>
+	<div class="mapContainer" id="map">
+		<div data-map="mainMap" class="hidden" id="mapVisual">
+		</div>
+	</div>
+	<footer> &copy;2017 Project X, By Grimme</footer>
+	<script src="header.js"></script>
+	<script src="cardStats.js"></script>
+	<script src="main.js"></script>
+</body>
+
 </html>
