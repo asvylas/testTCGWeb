@@ -31,7 +31,6 @@ cards.addEventListener("click", showcards);
 
 function showcards() {
   //Calling function to assign values to cards
-  addCardStats();
 
   if (homepage.className === "qoute") {
     homepage.className = "hidden"
