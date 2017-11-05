@@ -19,10 +19,11 @@ document.getElementById("ctypes").addEventListener("click", function(e) {
 });
 // Fetching data from JSON file
 const cardStatsReq = new XMLHttpRequest()
-cardStatsReq.open("GET", "https://raw.githubusercontent.com/asvylas/testTCGWeb/master/media/Cards.json");
+cardStatsReq.open("GET", "https://raw.githubusercontent.com/asvylas/testTCGWeb/master/public/media/Cards.json");
 cardStatsReq.onload = function(){
   const cardStats = JSON.parse(cardStatsReq.responseText);
   addCardStats(cardStats)
+  createCardContainers(cardStats)
 }
 cardStatsReq.send();
 //Assigning values from JSON file
