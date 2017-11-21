@@ -116,6 +116,9 @@ button:hover {
 .hidden {
 	display:none;
 }
+.map-hidden{
+	display:none;
+}
 #map {
 	display: inline-block;
 }
